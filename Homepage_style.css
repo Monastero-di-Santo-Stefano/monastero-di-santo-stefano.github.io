@@ -200,7 +200,7 @@ animation: expand .8s ease forwards .5s;
       transform: translateX(0px);
     }
   }
-  .social:{
+  .social{
 
     display:block;
     align-items: center;
