@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Homepage_style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+  </head>
+  <body>
+    <header>
+      <div class="inner-width">
+        <i class="menu-toggle-btn fas fa-bars"></i>
+        <nav class="navigation-menu">
+          <a href="C:\Users\Docente\Desktop\Santuario_sito\Smartphone\Home_page\Homepage_index.html"> Home</a>
+            <a href="C:\Users\Docente\Desktop\Santuario_sito\Smartphone\Storia\storia.html">Storia del monastero</a>
+            <a href="C:\Users\Docente\Desktop\Santuario_sito\Smartphone\Flora e fauna\florafauna.html">Flora Fauna</a>
+            <a href="C:\Users\Docente\Desktop\Santuario_sito\Smartphone\Percorso_page\Percorso_index.html">Percorso</a>
+            <a href="C:\Users\Docente\Desktop\Santuario_sito\Smartphone\Contatti\contatti_index.html">Contatti</a>
+            <a href="C:\Users\Docente\Desktop\Santuario_sito\Smartphone\Quiz bello\Quiz.html">Quiz divertente</a>
+            <a href="#">Giochino divertente</a>
+        </nav>
+      </div>
+    </header>
+
+<div class="titolo">
+<br>
+<br>
+<br>
+<br>
+<h1>Scopri il Santuario di Santo Stefano a Collebeato!</h1>
+<br>
+<br>
+<br>
+<br>
+</div>
+    <div class="swiper">
+        <br>
+        <br>
+        <br>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="santuario1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="santuatio2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="santuario3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="santuario4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="santuario5.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+<div class="testo1">
+    <br>
+    <br>
+    <br>
+    <br>
+<h2>"Lo sapevi che esiste un magnifico santuario a Brescia?<br>
+       Vieni a trovare il santuario di Santo Stefano nella località Santo Stefano, 25060 Collebeato (BS) 45.59 N 10.20 E
+  
+  Vieni ad avventurarti nelle magiche terre di Collebeato, ad assaporare la brezza di Santo Stefano, un santuario magnifico che ti farà vivere a pieno l'esperienza di Collebeato"</h2>
+<br>
+<br>
+<br>
+</div>
+<br>
+  <div class="social">
+  <div class="sm">
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="https://instagram.com/santuario.santostefano?igshid=MzNlNGNkZWQ4Mg=="><i class="fab fa-instagram"></i></a>
+    <a href="https://www.youtube.com/channel/UCAJYokdy52vGot8d0BJX2HA"><i class="fab fa-youtube"></i></a>
+    <a href="mailto:santuariosantostefano@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+  </div>
+  </div>
+    <script>
+        const swiper = new Swiper(".swiper", {
+            navigation:{
+                prevEl: ".swiper-button-prev",
+                nextEl: ".swiper-button-next"
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            effect: "coverflow"
+        });
+    </script>
+
+    <script type="text/javascript">
+      $(".menu-toggle-btn").click(function(){
+        $(this).toggleClass("fa-times");
+        $(".navigation-menu").toggleClass("active");
+      });
+    </script>
+  </body>
+</html>
