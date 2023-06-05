@@ -1,0 +1,259 @@
+header{
+    height: 90px;
+    background: #2f3640;
+  }
+  
+  .inner-width{
+    max-width: 1000px;
+    padding: 0 10px;
+    margin: auto;
+  }
+  
+  .navigation-menu{
+    float: right;
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+  }
+  
+  .navigation-menu a{
+    margin-left: 10px;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    transition: .3s linear;
+  }
+  
+  .navigation-menu a:hover{
+    background: #fff;
+    color: #2f3640;
+    transform: scale(1.1);
+  }
+  
+  .navigation-menu i{
+    margin-right: 8px;
+    font-size: 16px;
+  }
+  
+  .home{
+    color: #ff6b6b;
+  }
+  
+  .about{
+    color: #0abde3;
+  }
+  
+  .works{
+    color: #feca57;
+  }
+  
+  .team{
+    color: #5f27cd;
+  }
+  
+  .contact{
+    color: #1dd1a1;
+  }
+  
+  .menu-toggle-btn{
+    float: right;
+    height: 90px;
+    line-height: 90px !important;
+    color: #fff;
+    font-size: 26px;
+    display: none !important;
+    cursor: pointer;
+  }
+  
+  
+  @media screen and (max-width:700px) {
+    .menu-toggle-btn{
+      display: block !important;
+    }
+  
+    .navigation-menu{
+      position: fixed;
+      width: 100%;
+      max-width: 400px;
+      background: #172b4d;
+      top: 90px;
+      right: 0;
+      display: none;
+      padding: 20px 40px;
+      box-sizing: border-box;
+    }
+  
+    .navigation-menu::before{
+      content: "";
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #172b4d;
+      position: absolute;
+      top: -10px;
+      right: 10px;
+    }
+  
+    .navigation-menu a{
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .navigation-menu.active{
+      display: block;
+    }
+  }
+
+  body{
+    margin: 0;
+    padding: 0;
+    background-color: #00171f;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}.contact-page{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.contact-page-title{
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.back-title{
+    text-align: center;
+    -webkit-text-stroke: 1px #ffffff12;
+    color: transparent;
+    font-size: 110px;
+    letter-spacing: 6px;
+}
+
+.front-title{
+    color: #f1f1f1;
+    font-weight: 900;
+    font-size: 50px;
+    transform: translateY(-95px);
+}
+
+.front-title span{
+    color: #0fbcf9;
+}
+
+.contact-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-box{
+    background-color: #ffffff12;
+    padding: 20px;
+    border-radius: 3px ;
+    border-left: 2px solid #0fbcf9;
+    width: 100%;
+    max-width: 360px;
+    margin-bottom: 40px;
+}
+
+.box-title{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.box-icon{
+    background: #0fbcf9;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.box-content{
+    color: #858585;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 10px;
+    background: #ffffff12;
+    padding: 14px;
+    color: #fff;
+    border: 0;
+}
+
+textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    background: #ffffff12;
+    padding: 14px;
+    color: #fff;
+    border: 0;
+    resize: none;
+    height: 160px;
+}
+
+input::placeholder{
+    color: #888;
+}
+
+.nameInput,.emailInput{
+    width: calc(50% - 5px);
+}
+
+.nameInput{
+    border-top-left-radius: 10px;
+}
+
+.emailInput{
+    border-top-right-radius: 10px;
+}
+
+.sendbtn{
+    background-color: #0fbcf9;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .3s linear;
+}
+
+.sendbtn:hover{
+    opacity: .7;
+}
+
+@media screen and (max-width:1200px) {
+    .contact-box{
+        max-width: 100%;
+    }
+
+    .nameInput,.emailInput{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .nameInput{
+        border-radius: 10px 10px 0 0;
+    }
+}
