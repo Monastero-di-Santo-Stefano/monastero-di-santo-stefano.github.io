@@ -78,35 +78,86 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'Domanda 1',
+    question: 'Dove si trova il santuario?',
     answers: [
-      { text: 'Risposta 1', correct: true },
-      { text: 'Risposta 2', correct: false }
+        {text: "Concesio", correct:false},
+        {text: "Collebeato", correct:true},
+        {text: "Cellatica", correct:false},
+        {text: "Gussago", correct:false},
+      ]
+  },
+  {
+    question: 'Secolo della costruzione?',
+    answers: [
+        {text: "VII", correct:false},
+        {text: "IX", correct:true},
+        {text: "XI", correct:false},
+        {text: "XVII", correct:false},
     ]
   },
   {
-    question: 'Domanda 2',
+    question: 'Cosa era prima?', 
     answers: [
-      { text: 'Risposta 1', correct: true },
-      { text: 'Risposta 2', correct: true },
-      { text: 'Risposta 3', correct: true },
-      { text: 'Risposta 4', correct: true }
+        {text: "Monastero", correct:true},
+        {text: "Chiesa", correct:false},
+        {text: "Comune", correct:false},
+        {text: "Palazzo", correct:false},
     ]
   },
   {
-    question: 'Domanda 3',
+    question: ' Di che tipo di architettura e? ',
     answers: [
-      { text: 'Risposta 1', correct: false },
-      { text: 'Risposta 2', correct: true },
-      { text: 'Risposta 3', correct: false },
-      { text: 'Risposta 4', correct: false }
+        {text: "Greca", correct:false},
+        {text: "Romanica", correct:true},
     ]
   },
   {
-    question: 'Domanda 4',
-    answers: [
-      { text: 'risposta 1', correct: false },
-      { text: 'risposta 2', correct: true }
+    question: "Che animali sono più comuni?",
+    answers:[
+      {text: "Caprioli", correct:false},
+      {text: "Cervi", correct:false},
+      {text: "Lupi", correct:false},
+      {text: "Lepri", correct:true},
+    ]
+  },
+
+{
+    question: "Cosa narra la leggenda?",
+    answers:[
+      {text: "Fondato da San Colombano", correct:true},
+      {text: "Fondato da Santo Stefano", correct:false},
+      {text: "Presenza di un fantasma", correct:false},
+      {text: "Presenza di animali magici", correct:false},
+    ]
+  },
+
+  {
+    question: "Com'è il clima?",
+    answers:[
+      {text: "Arido", correct:false},
+      {text: "Nevoso", correct:false},
+      {text: "Contintentale", correct:true},
+      {text: "Tropicale", correct:false},
+    ]
+  },
+
+  {
+    question: "Dove si trova Collebeato?",
+    answers:[
+      {text: "Brescia", correct:true},
+      {text: "Bergamo", correct:false},
+      {text: "Monza", correct:false},
+      {text: "Concesio", correct:false},
+    ]
+  },
+
+  {
+    question: "Che animali sono più comuni?",
+    answers:[
+      {text: "Caprioli", correct:false},
+      {text: "Cervi", correct:false},
+      {text: "Lupi", correct:false},
+      {text: "Lepri", correct:true},
     ]
   }
 ]
